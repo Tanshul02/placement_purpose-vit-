@@ -5,7 +5,7 @@ pipeline {
         DOCKER_HUB_USER = 'tanshul12'
         IMAGE_NAME      = 'placement-portal'
         IMAGE_TAG       = "${BUILD_NUMBER}"
-        KUBECONFIG_CRED = 'k8s-kubeconfig'
+        KUBECONFIG_CRED = 'kuberconfig'
         DOCKER_CRED     = 'dockerhub'
         DOCKER_BIN      = 'C:\\Users\\tanshul\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin'
     }
