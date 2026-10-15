@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Placement Portal</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #0f172a; color: #f8fafc; }
+    header { background: #1e293b; padding: 25px 20px; text-align: center; border-bottom: 2px solid #38bdf8; }
+    header h1 { margin: 0; color: #38bdf8; }
+    header p { margin: 6px 0 0; color: #94a3b8; font-size: 14px; }
+    .container { max-width: 950px; margin: 24px auto; padding: 0 16px; }
+    .card { background: #1e293b; border-radius: 8px; padding: 20px; margin-bottom: 20px; border: 1px solid #334155; }
+    h2 { color: #f1f5f9; border-bottom: 1px solid #334155; padding-bottom: 8px; margin-top: 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; }
+    .stat-box { background: #0f172a; border: 1px solid #334155; padding: 15px; border-radius: 6px; text-align: center; }
+    .stat-number { font-size: 26px; font-weight: bold; color: #38bdf8; }
+    .stat-label { font-size: 13px; color: #94a3b8; margin-top: 5px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 14px; }
+    th, td { border: 1px solid #334155; padding: 10px; text-align: left; }
+    th { background: #0f172a; color: #38bdf8; }
+    .tag { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; background: #064e3b; color: #6ee7b7; }
+    footer { text-align: center; padding: 20px; font-size: 12px; color: #64748b; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Student Placement Portal</h1>
+    <p>Automated Recruitment & Campus Drive Tracker</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Placement Highlights (2025–2026)</h2>
+      <div class="stats-grid">
+        <div class="stat-box"><div class="stat-number">95.4%</div><div class="stat-label">Placement Rate</div></div>
+        <div class="stat-box"><div class="stat-number">48 LPA</div><div class="stat-label">Highest Package</div></div>
+        <div class="stat-box"><div class="stat-number">8.5 LPA</div><div class="stat-label">Average Package</div></div>
+        <div class="stat-box"><div class="stat-number">300+</div><div class="stat-label">Partner Companies</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Upcoming Recruitment Drives</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Role</th>
+            <th>Eligibility</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google</td>
+            <td>Software Engineer</td>
+            <td>CGPA &gt;= 8.5</td>
+            <td>Nov 15, 2026</td>
+            <td><span class="tag">Open</span></td>
+          </tr>
+          <tr>
+            <td>Microsoft</td>
+            <td>Cloud Support Engineer</td>
+            <td>CGPA &gt;= 8.0</td>
+            <td>Nov 22, 2026</td>
+            <td><span class="tag">Open</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    <p>Version 1.0.0 (Production Stable)</p>
+  </footer>
+</body>
+</html>
