@@ -7,7 +7,7 @@ pipeline {
         IMAGE_TAG       = "${BUILD_NUMBER}"
         KUBECONFIG_CRED = 'k8s-kubeconfig'
         DOCKER_CRED     = 'dockerhub-cred'
-        DOCKER_BIN      = 'C:\\Program Files\\Docker\\Docker\\resources\\bin'
+        DOCKER_BIN      = 'C:\\Users\\tanshul\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin'
     }
 
     stages {
