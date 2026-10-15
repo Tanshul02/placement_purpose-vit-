@@ -6,7 +6,7 @@ pipeline {
         IMAGE_NAME      = 'placement-portal'
         IMAGE_TAG       = "${BUILD_NUMBER}"
         KUBECONFIG_CRED = 'k8s-kubeconfig'
-        DOCKER_CRED     = 'dockerhub-cred'
+        DOCKER_CRED     = 'dockerhub'
         DOCKER_BIN      = 'C:\\Users\\tanshul\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin'
     }
 
@@ -28,7 +28,7 @@ pipeline {
             steps {
                 bat """
                     "${DOCKER_BIN}\\docker.exe" run -d --name temp-test -p 8085:80 %DOCKER_HUB_USER%/%IMAGE_NAME%:%IMAGE_TAG%
-                    timeout /t 3 /nobreak >nul
+                    ping -n 4 127.0.0.1 >nul
                     curl -s -f http://localhost:8085 >nul || ("${DOCKER_BIN}\\docker.exe" rm -f temp-test && exit 1)
                     "${DOCKER_BIN}\\docker.exe" rm -f temp-test
                 """
