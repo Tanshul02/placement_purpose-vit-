@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: placement-portal
-        image: tanshul12/placement-portal:latest
+        image: tanshul12/placement-portal:broken-fault-v999
         imagePullPolicy: Always
         ports:
         - containerPort: 80
